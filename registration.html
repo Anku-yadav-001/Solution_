@@ -26,15 +26,15 @@
 	<button onclick="resetDisplay()">RESET DISPLAY</button>
 	<script type="text/javascript">
 		function showName() {
-			Name=document.getElementById("name")
-            show=document.getElementById("dName")
-            show.innerText=Name.value
+			let Name=document.getElementById("name");
+            let show=document.getElementById("dName");
+            show.innerText='Name : ${Name.innerText}';
 		}
 
 		function showGender() {
-			Name=document.getElementById("gender")
-            show=document.getElementById("dGender")
-            show.innerText=Name.value
+			Name=document.getElementById("gender");
+            show=document.getElementById("dGender");
+			show.innerText='GENDER : ${Name.value}';
 		}
 
 		function showEmail() {
